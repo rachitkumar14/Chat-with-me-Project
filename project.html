@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with me portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* CSS */
+        *{
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           font-family: 'Times New Roman', Times, serif;
+           box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            background-color: #edf1fd;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+        button{
+            background-color: rgb(14, 46, 107);
+            color: white;
+            padding: 5px 10px ;
+            border: 4px solid white;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 25px;
+            width: fit-content;
+        }
+        button:hover{
+            background-color: rgb(160, 11, 6);
+        }
+        .main_para_heading{
+            background-color: rgb(212, 209, 209);
+        }
+        .nav{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+        }
+        .nav_item{
+            display: flex;
+     gap: 35px;
+     align-items: center;
+     font-weight: 500;
+     font-size: 20px;
+        }
+        .nav_items a{
+            color: black;
+        }
+        .nav_items a:hover{
+            color: rgb(223, 105, 51);
+        }
+        .nav_logo{
+            font-weight: 900;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .nav_logo:hover{
+            text-decoration: underline;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+        }
+        .main_logo img{
+            height: 390px;
+            width: 390px;
+        }
+        .main_chat_button{
+            display: flex;
+            justify-content: center;
+        }
+        .main_heading{
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+           margin-left: 25px;
+        }
+        .main_heading h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: 400px;
+        }
+        .main_para_heading{
+            color: darkblue;
+        }
+        .search_label{
+            display: flex;
+            align-items: center;
+        }
+        .search_button{
+            font-size: 15px;
+        }
+        .main_para{
+            font-size: 20px;
+        }
+        .main_chat_button{
+            margin-top: 10px;
+        }
+        .main_logo{
+            margin-right: 20px;
+        }
+        /* footer */
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .footer_copyright_item{
+display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .footer_copyright{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+     <nav class="nav">
+         <!-- Logo -->
+      <div class="nav_logo" title="Logo of the Company">LOGO</div>
+      <!-- Navigation  -->
+      <ul class="nav_item"> 
+        <li class="nav_items"><a href="">HOME</a></li>
+        <li class="nav_items"><a href="">CONTACT US</a></li>
+        <li class="nav_items"><a href="">CONTENT</a></li>
+      </ul>
+      <!-- Search Box -->
+      <div class="search_label"> <label for="search"></label>
+        <input type="text" placeholder="Search">
+        <button class="search_button">Search</button>
+    </div>
+</nav>
+    </header>
+    <!-- Main section -->
+    <section class="main">
+        <!-- Left division Content -->
+        <div class="main_heading">
+            <h1>Hello, I am a <span class="main_para_heading"> Web Developer</span></h1>
+        <p class="main_para">
+            I am a aspiring <span class="main_para_heading">Full Stack Web Developer </span> , <br> working as <span class="main_para_heading">a Freelancer</span> for <span> <br> National and International Client.</span> <br>
+        </p>
+        </div>
+        <!-- Right Division Content -->
+        <div class="main_logo">
+            <img src="assests/avtaar.png" title="Avtaar Pic" alt="Avtaar logo" />
+            <!-- Chat button -->
+            <div class="main_chat_button">
+                <button>Chat With Me</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- Footer text -->
+        <p class="footer_copyright">Copyright &copy; 2022 LOGO. All Right Reserved</p>
+        <ul class="footer_copyright_item">
+           <li class="footer_copyright_items" title="Github"> <a href=""> <i class="fa-brands fa-github"></i></a></li>
+           <li class="footer_copyright_items" title="Facebook"><a href=""> <i class="fa-brands fa-facebook"></i></a></li>
+           <li class="footer_copyright_items" title="Instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></li> 
+        </ul>
+    </footer>
+</body>
+</html>
